@@ -58,14 +58,14 @@ Secondary Text: Circular, Book (400), 14px
 
 ## Project Roles and Responsibilities.
 
-Project Manager ->	Oversees timeline, coordinates team, manages deliverables
-Frontend Developers ->	Implements UI components, ensures responsive design
-Backend Developers	-> Builds APIs, manages database, implements business logic
-Designers ->	Creates mockups, maintains design system, ensures UX quality
-QA/Testers ->	Writes test cases, performs testing, reports bugs
-DevOps Engineers ->	Manages deployment, CI/CD pipeline, server infrastructure
-Product Owner ->	Defines requirements, prioritizes features, represents stakeholders
-Scrum Master ->	Facilitates agile processes, removes blockers, organizes meetings
+1. Project Manager ->	Oversees timeline, coordinates team, manages deliverables.
+2. Frontend Developers ->	Implements UI components, ensures responsive design.
+3. Backend Developers	-> Builds APIs, manages database, implements business logic.
+4. Designers ->	Creates mockups, maintains design system, ensures UX quality.
+5. QA/Testers ->	Writes test cases, performs testing, reports bugs.
+6. DevOps Engineers ->	Manages deployment, CI/CD pipeline, server infrastructure.
+7. Product Owner ->	Defines requirements, prioritizes features, represents stakeholders.
+8. Scrum Master ->	Facilitates agile processes, removes blockers, organizes meetings.
 
 ## UI Component Patterns.
 
