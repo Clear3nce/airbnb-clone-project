@@ -54,7 +54,7 @@ Secondary Text: Circular, Book (400), 14px
  2. early Problem detection, minimising costly errors later in the development.
  3. building design confidence.
 
-### Project Roles and Responsibilities.
+## Project Roles and Responsibilities.
 
 
 
@@ -64,7 +64,7 @@ Secondary Text: Circular, Book (400), 14px
 
 
 
-### UI Component Patterns.
+## UI Component Patterns.
 
 
 
