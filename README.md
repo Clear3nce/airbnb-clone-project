@@ -76,10 +76,10 @@ Navbar
 - Search bar
 - User navigation
 - Responsive menu
-- Property Card
+  
+Property Card
 
-Property image
-
+- Property image
 - Basic details (price, location, rating)
 - Favorite button
 - Responsive layout
