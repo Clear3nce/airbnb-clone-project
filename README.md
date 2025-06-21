@@ -4,7 +4,7 @@
 
 ### Project overview
 
-- This project is a full-stack clone of the popular accommodation booking platform AirBnB. The goal is to build a functional web application that allows users to browse property listings, view detailed property information, and complete bookings. The project will cover frontend development, backend APIs, database design, and deployment.
+- This project is a full-stack clone of the popular accommodation booking platform Airbnb. The goal is to build a functional web application that allows users to browse property listings, view detailed property information, and complete bookings. The project will cover frontend development, backend APIs, database design, and deployment.
 
 
 ### Tech Stack
@@ -99,27 +99,70 @@ Footer
 ## Provide a brief overview of the project, including the project goals and the tech stack.
 ### This project is designed to simulate the development of a robust booking platform like Airbnb. It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security.
 ### Project goals:
-  1. Master collaborative team workflows using GitHub.
-  2. Deepen the understanding of backend architecture and database design principles.
-  3. Implement advanced security measures for API development.
-  4. Gain proficiency in designing and managing CI/CD pipelines for efficient deployment.
-  5. Strengthen the ability to document and plan complex software projects effectively.
-  6. Develop an understanding of integrating technologies like Django, MySQL, and GraphQL in a unified ecosystem.
+
+  1. Develop an understanding of integrating technologies like Django, MySQL, and GraphQL in a unified ecosystem.
+  2. User Management: Implement a secure system for user registration, authentication, and profile management.
+  3. Property Management: Develop features for property listing creation, updates, and retrieval.
+  4. Booking System: Create a booking mechanism for users to reserve properties and manage booking details.
+  5. Payment Processing: Integrate a payment system to handle transactions and record payment details.
+  6. Review System: Allow users to leave reviews and ratings for properties.
+  7. Data Optimization: Ensure efficient data retrieval and storage through database optimizations.
  
 ### Tech stack:
 - Python, Django, Database system e.g(MySQL), Docker, Github Actions.
 
 
 ## Team Roles and Responsibilities.
-1. A business analyst ->
-2. A product owner -> holds responsibility for a product vision and evolution,  Make sure the final product meets customer requirements.
-3. A project manager -> makes sure a product or its part is delivered on time and within budget, manages and motivates the software development team.
-4. A UI/UX designer -> Transforms a product vision into user-friendly designs
-5. A software architect -> Designs a high-level software architecture, selects appropriate tools and platforms to implement the product vision
-6. Software developers -> Engineers, and stabilizes the product.
-7. Quality assurance engineers -> Makes sure an application performs according to requirements.
-8. Test automation engineers -> Design a test automation ecosystem.
-9. DevOps engineer -> Facilitates cooperation between development and operations teams.
+1. A business analyst -> Understands the customer’s business processes, translates the customer's business needs into requirements.
+2. Database Administrator: Manages database design, indexing, and optimizations.
+3. A product owner -> holds responsibility for a product vision and evolution,  Make sure the final product meets customer requirements.
+4. A project manager -> makes sure a product or its part is delivered on time and within budget, manages and motivates the software development team.
+5. A UI/UX designer -> Transforms a product vision into user-friendly designs
+6. A software architect -> Designs a high-level software architecture, selects appropriate tools and platforms to implement the product vision
+7. Software developers -> Engineers, and stabilizes the product.
+8. Quality assurance engineers -> Makes sure an application performs according to requirements.
+9. Test automation engineers -> Design a test automation ecosystem.
+10. DevOps engineer -> Facilitates cooperation between development and operations teams.
+
+
+## Technology Stack.
+- Django: A high-level Python web framework used for building the RESTful API.
+- Django REST Framework: Provides tools for creating and managing RESTful APIs.
+- PostgreSQL: A powerful relational database used for data storage.
+- GraphQL: Allows for flexible and efficient querying of data.
+- Celery: For handling asynchronous tasks such as sending notifications or processing payments.
+- Redis: Used for caching and session management.
+- Docker: Containerization tool for consistent development and deployment environments.
+- CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+
+## Database Design.
+
+###  API Documentation
+- OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
+- Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
+- GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend.
+
+### User Authentication
+Features: Register new users, authenticate, and manage user profiles.
+
+### Property Management
+Features: Create, update, retrieve, and delete property listings.
+
+### Booking System
+Features: Make, update, and manage bookings, including check-in and check-out details.
+
+### Payment Processing
+Features: Handle payment transactions related to bookings.
+
+### Review System
+Features: Post and manage reviews for properties.
+
+### Database Optimizations
+Indexing: Implement indexes for fast retrieval of frequently accessed data.
+Caching: Use caching strategies to reduce database load and improve performance.
+
+## Feature Breakdown.
+
 
 
 
