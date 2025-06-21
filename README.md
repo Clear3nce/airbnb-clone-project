@@ -197,6 +197,82 @@ Features: Post and manage reviews for properties.
 Indexing: Implement indexes for fast retrieval of frequently accessed data.
 Caching: Use caching strategies to reduce database load and improve performance.
 
+## API Security
+### Authentication
+
+- JWT (JSON Web Tokens) for user login/session management.
+
+- Secure password storage using bcrypt (hashing + salting).
+
+#### Why it matters: Ensures only verified users can access protected endpoints.
+
+### Authorization (Role-Based Access Control - RBAC)
+
+- Different permissions for guests, hosts, and admins.
+
+- Middleware to validate user roles before allowing actions (e.g., only hosts can edit their properties).
+
+#### Why it matters: Prevents users from accessing/modifying data they shouldn’t (e.g., a guest deleting a property).
+
+### Rate Limiting
+
+- Express-rate-limit to restrict excessive API calls (e.g., 100 requests/minute per IP).
+
+#### Why it matters: Protects against brute-force attacks and DDoS attempts.
+
+### Data Validation & Sanitization
+
+- Express-validator to sanitize user inputs (e.g., preventing SQL injection).
+
+#### Why it matters: Blocks malicious payloads from compromising the database.
+
+### HTTPS & Secure Headers
+
+- Enforce HTTPS via Helmet.js (sets security headers like X-Content-Type-Options).
+
+#### Why it matters: Encrypts data in transit and mitigates XSS/clickjacking risks.
+
+### Payment Security
+
+- PCI DSS compliance (never store raw card details; use Stripe/PayPal tokens).
+
+#### Why it matters: Prevents financial fraud and protects sensitive payment data.
+
+### Logging & Monitoring
+
+- Track suspicious activity (e.g., failed logins) using Winston/Morgan.
+
+#### Why it matters: Early detection of breaches or abuse.
+
+## CI/CD Pipeline.
+
+### CI/CD (Continuous Integration and Continuous Deployment) automates the process of testing, building, and deploying code changes. This ensures faster, more reliable software delivery with fewer errors.
+- Continuous Integration (CI):
+Automatically runs tests and checks whenever code is pushed to the repository (e.g., on git push).
+- Continuous Deployment (CD):
+Automatically deploys the tested code to production/staging environments if all checks pass.
+
+### Why It Matters for This Project
+
+- Faster Development:
+Catch bugs early with automated testing (e.g., unit/integration tests).
+
+- Consistency:
+Avoid "it works on my machine" issues by using standardized environments (e.g., Docker).
+
+- Reliability:
+Reduce manual errors in deployment (e.g., scripts handle builds + deployments).
+
+- Scalability:
+Easily roll back if a deployment fails.
+
+### Tools We’ll Use
+
+- GitHub Actions: For CI/CD workflows (runs tests on every push/pull request).
+
+- Docker: Containerization to ensure consistent environments across development/staging/production.
+
+- AWS/Heroku: For deployment automation (e.g., deploy to AWS Elastic Beanstalk after tests pass).
 
 
 
