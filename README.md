@@ -94,6 +94,34 @@ Footer
   Each component will be designed for reusability and consistency across the application.
 
 
+# Answers for Backend (BE)
+
+## Provide a brief overview of the project, including the project goals and the tech stack.
+### This project is designed to simulate the development of a robust booking platform like Airbnb. It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security.
+### Project goals:
+  1. Master collaborative team workflows using GitHub.
+  2. Deepen the understanding of backend architecture and database design principles.
+  3. Implement advanced security measures for API development.
+  4. Gain proficiency in designing and managing CI/CD pipelines for efficient deployment.
+  5. Strengthen the ability to document and plan complex software projects effectively.
+  6. Develop an understanding of integrating technologies like Django, MySQL, and GraphQL in a unified ecosystem.
+ 
+### Tech stack:
+- Python, Django, Database system e.g(MySQL), Docker, Github Actions.
+
+
+## Team Roles and Responsibilities.
+1. A business analyst ->
+2. A product owner -> holds responsibility for a product vision and evolution,  Make sure the final product meets customer requirements.
+3. A project manager -> makes sure a product or its part is delivered on time and within budget, manages and motivates the software development team.
+4. A UI/UX designer -> Transforms a product vision into user-friendly designs
+5. A software architect -> Designs a high-level software architecture, selects appropriate tools and platforms to implement the product vision
+6. Software developers -> Engineers, and stabilizes the product.
+7. Quality assurance engineers -> Makes sure an application performs according to requirements.
+8. Test automation engineers -> Design a test automation ecosystem.
+9. DevOps engineer -> Facilitates cooperation between development and operations teams.
+
+
 
 
 
