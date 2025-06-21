@@ -18,7 +18,7 @@
 - Maintain visual consistency.
 - Ensure fast loading times.
 - Prioritize mobile responsiveness.
-- Create intuitive booking flow.
+- Create an intuitive booking flow.
 
 ### Key features.
 
@@ -29,9 +29,9 @@
 
 ### Primary pages.
 
-- Property Listing View : grid display of available properties with filters.
-- Listing Detailed View : Complete property details with images and booking form.
-- Simple Checkout View : Streamlined payment and booking confirmation.
+- Property Listing View: grid display of available properties with filters.
+- Listing Detailed View: Complete property details with images and booking form.
+- Simple Checkout View: Streamlined payment and booking confirmation.
 
 ### Importance of User-Friendly Design.
 - A well-designed booking system reduces friction in the user journey, increases conversion rates, and improves customer satisfaction. Clear navigation, intuitive interfaces, and responsive design are critical for success.
@@ -51,10 +51,10 @@ Primary Font: Circular, Medium (500), 16px
 Headings: Circular, Bold (700), 24px-32px
 Secondary Text: Circular, Book (400), 14px
 
-### Importance of identifying design properties of a mock-up design are:
+### Importance of identifying design properties of a mock-up design is:
  1. Effective communication, aligning stakeholders.
  2. early Problem detection, minimising costly errors later in the development.
- 3. building design confidence.
+ 3. Building design confidence.
 
 ## Project Roles and Responsibilities.
 
@@ -137,6 +137,42 @@ Footer
 
 ## Database Design.
 
+###  Users
+- `id` (Primary Key)
+- `name`
+- `email` (Unique)
+- `password_hash`
+#### A **User** can have multiple **Bookings** (one-to-many relationship)
+  
+###  properties
+- `price_per_night`
+- `host_id` (Foreign Key to Users)
+- `location`
+#### A **Property** can have multiple **Reviews** (one-to-many)
+  
+###  Bookings
+- `check_in_date`
+- `check_out_date`
+- `total_price`
+#### A **Booking** belongs to one **Property** and one **User** (the guest) (many-to-one relationships)
+
+  
+###  Reviews
+- `rating`
+- `comment`
+- `created_at`
+#### A **Review** belongs to one **Property** and one **User** (many-to-one)
+  
+###  Payments.
+- `amount`
+- `payment_method`
+- `status`
+- `transaction_date`
+####  A **Payment** is associated with one **Booking** (one-to-one)
+
+
+
+## Feature Breakdown.
 ###  API Documentation
 - OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
 - Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
@@ -160,8 +196,6 @@ Features: Post and manage reviews for properties.
 ### Database Optimizations
 Indexing: Implement indexes for fast retrieval of frequently accessed data.
 Caching: Use caching strategies to reduce database load and improve performance.
-
-## Feature Breakdown.
 
 
 
